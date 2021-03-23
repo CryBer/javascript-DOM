@@ -18,4 +18,4 @@ if the window load event listener is removed then the link doesn't appear once t
 
 > Describe the the `addEventListener` method. (Remember that there is a specific, technical, methodical way to describe methods. Your reply should match that format.)
 
-'addEventListener' takes two parameters; an event and a function. Whenever the element it is added to has the event fire, the function is executed with a parameter that reurns what object fired the event
+To hide each element I used ForEach() which allowed me to preform a function on each of the elements in the list which was returned by querySelectorAll()

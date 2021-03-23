@@ -1,11 +1,10 @@
 window.addEventListener("load", function(){
-  const button = document.querySelector("#more_text_link")
-  const textToShow = document.querySelector("#more_text_content")
-  textToShow.style.display = "none"
+  const button = document.getElementById('button')
 
-
-  button.addEventListener('click', function(e) {
-      textToShow.style.display = "initial"
-      button.style.display = "none"
-    })
-  });
+  button.addEventListener('click', function(e){
+      e.preventDefault()
+      document.querySelectorAll('.hide_me').forEach(function(e) {
+          e.style.display = 'none';
+      });
+  })
+}) 
